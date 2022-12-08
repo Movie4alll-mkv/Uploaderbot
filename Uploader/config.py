@@ -78,5 +78,5 @@ class Config(object):
     AUTH_USERS.append(OWNER_ID)
     PORT = "0.0.0.0"
     try:
-        except FloodWait as e:
-        await asyncio.sleep(e.60)  
+    except FloodWait as e:
+    await asyncio.sleep(e.60)  
