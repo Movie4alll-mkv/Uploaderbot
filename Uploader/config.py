@@ -32,6 +32,8 @@ logging.basicConfig(
 )
 
 
+import asyncio
+from pyrogram.errors import FloodWait
 
 
 class Config(object):
@@ -75,3 +77,7 @@ class Config(object):
     AUTH_USERS = list({int(x) for x in os.environ.get("AUTH_USERS", "0").split()})
     AUTH_USERS.append(OWNER_ID)
     PORT = "0.0.0.0"
+
+    try:
+          except FloodWait as e:
+        await asyncio.sleep(e.60)  
